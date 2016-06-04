@@ -1,4 +1,5 @@
-﻿<Page
+﻿
+<Page
     x:Class="Minez.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -6,8 +7,107 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="800" Height="480">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFB0D0FF" Offset="0"/>
+                    <GradientStop Color="#FF0F71FF" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="800" Height="100">
+                <Image x:Name="image_Copy" HorizontalAlignment="Center" Height="80" Margin="50,0,5,0" VerticalAlignment="Center" Width="120" Source="Assets/logo_5.png"/>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="200" Height="100">
+                    <TextBlock Name="Lbl_Time" HorizontalAlignment="Center" FontSize="24" Foreground="#efff" Margin="0,20,0,0">10:18 AM</TextBlock>
+                    <TextBlock Name="Lbl_Date" Grid.Row="1" HorizontalAlignment="Center" Foreground="#efff" Margin="0,5,0,5" FontSize="20">September 4, 2015</TextBlock>
+                </StackPanel>
+                <TextBlock x:Name="MinezAutomatic" Height="80" Margin="5,20,10,0" TextWrapping="Wrap" Text="Minez Automatic" VerticalAlignment="Center" Width="400" FontFamily="UVN Thoi Dai" FontSize="48" HorizontalAlignment="Center" FontWeight="Bold" TextAlignment="Right"/>
 
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="775" Height="50">
+                <Button x:Name="Button_Quat8_NO" Content="Quạt 8" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" FontSize="11" BorderThickness="1"/>
+                <Button x:Name="Button_GauLo_NO" Content="Gầu Lò" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_GauLo_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Buuton_VitTai_NO" Content="Vít tải" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Buuton_VitTai_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_BangTai_NO" Content="Băng tải" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_BangTai_NO_Click" BorderThickness="1" FontSize="11" />
+                <Button x:Name="Button_QuatGau_NO" Content="Quạt Gầu" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_QuatGau_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_CapLieu_NO" Content="Cấp liệu" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_CapLieu_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_QuatLo_NO" Content="Quạt Lò" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_QuatLo_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_GauBe_NO" Content="Gầu Bể" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_GauBe_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_QuatBe_NO" Content="Quạt Bể" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_QuatBe_NO_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_0" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_0_Click" BorderThickness="1" FontSize="11"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0" Width="775" Height="50">
+                <Button x:Name="Button_Quat8_NC" Content="Quạt 8" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_GauLo_NC" Content="Gầu lò" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_GauLo_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Buuton_VitTai_NC" Content="Vít tải" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Buuton_VitTai_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_BangTai_NC" Content="Băng tải" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_BangTai_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_QuatGau_NC" Content="Quạt Gầu" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_QuatGau_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_CapLieu_NC" Content="Cấp Liệu" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_CapLieu_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_QuatLo_NC" Content="Quạt Lò" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_QuatLo_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_GauBe_NC" Content="Gầu Bể" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_GauBe_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_QuatBe_NC" Content="Quạt Bể" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="Red" Foreground="White" BorderBrush="White" Click="Button_QuatBe_NC_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_1" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_1_Click" BorderThickness="1" FontSize="11"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10,0,0" Width="775" Height="50">
+                <Button x:Name="Button_TuDong" Content="Tự Động" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F0000FF" Foreground="White" BorderBrush="White" Click="Button_TuDong_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_Say" Content="Sấy" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F0000FF" Foreground="White" BorderBrush="White" Click="Button_Say_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_Quat" Content="Quạt" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F0000FF" Foreground="White" BorderBrush="White" Click="Button_Quat_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_TamDung" Content="Tạm dừng" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_TamDung_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_Chay" Content="Chạy" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F00FF00" Foreground="White" BorderBrush="White" Click="Button_Chay_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_2" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_2_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_3" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_3_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_4" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_4_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_5" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_5_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_6" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_6_Click" BorderThickness="1" FontSize="11"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="775" Height="50">
+                <Button x:Name="Button_BangTay" Content="Bằng Tay" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F0000FF" Foreground="White" BorderBrush="White" Click="Button_BangTay_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_VaoLo" Content="Vào Lò" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F0000FF" Foreground="White" BorderBrush="White" Click="Button_VaoLo_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_RaLo" Content="Ra Lò" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3F0000FF" Foreground="White" BorderBrush="White" Click="Button_RaLo_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_Ngung" Content="Ngừng" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#59FF0404" Foreground="White" BorderBrush="White" Click="Button_Ngung_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_Reset" Content="Reset" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#59FF0404" Foreground="White" BorderBrush="White" Click="Button_Reset_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_7" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_7_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_8" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_8_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_9" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_9_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_10" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_10_Click" BorderThickness="1" FontSize="11"/>
+                <Button x:Name="Button_None_11" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" IsTabStop="False" Width="67" Height="40" Margin="5" Background="#3FFFFFFF" Foreground="White" BorderBrush="White" Click="Button_None_11_Click" BorderThickness="1" FontSize="11"/>
+            </StackPanel>
+            <RelativePanel HorizontalAlignment="Left" Height="100" Margin="0,15,0,0" Width="800" Background="White">
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="30" Margin="58,15,-13.667,0.333" TextWrapping="Wrap" Text="Thời gian cấp liệu:" VerticalAlignment="Center" Width="125" Foreground="#FF0066FF"/>
+                <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="30" Margin="58,55,-13.667,0.333" TextWrapping="Wrap" Text="Thời gian dừng:" VerticalAlignment="Center" Width="125" Foreground="#FF0066FF"/>
+                <TextBox x:Name="textThoiGianCapLieu" HorizontalAlignment="Left" Height="30" Margin="183,10,-13.667,0" TextWrapping="Wrap" Text="5" Width="64" TextAlignment="Right"/>
+                <TextBox x:Name="textThoiGianDung" HorizontalAlignment="Left" Height="30" Margin="183,50,-13.667,0" TextWrapping="Wrap" Text="10" Width="64" TextAlignment="Right"/>
+                <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Height="25" Margin="247,15,-12.667,1.333" TextWrapping="Wrap" Text="s" VerticalAlignment="Center" Width="25" Foreground="#FF0066FF" TextAlignment="Center"/>
+                <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Height="25" Margin="247,55,-12.667,1.333" TextWrapping="Wrap" Text="s" VerticalAlignment="Center" Width="25" Foreground="#FF0066FF" TextAlignment="Center"/>
+
+                <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Height="30" Margin="286,15,-65.667,0.333" TextWrapping="Wrap" Text="Nhiệt độ cài đặt:" VerticalAlignment="Center" Width="125" Foreground="#FF0066FF"/>
+                <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Height="30" Margin="286,55,-65.667,0.333" TextWrapping="Wrap" Text="Nhiệt độ hiện tại:" VerticalAlignment="Center" Width="125" Foreground="#FF0066FF"/>
+                <TextBox x:Name="textNhietDoCaiDat" HorizontalAlignment="Left" Height="30" Margin="411,10,-65.667,0" TextWrapping="Wrap" Text="110" Width="64" TextAlignment="Right"/>
+                <TextBox x:Name="textNhietDoHienTai" HorizontalAlignment="Left" Height="30" Margin="411,50,-65.667,0" TextWrapping="Wrap" Text="109" Width="64" TextAlignment="Right"/>
+                <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Height="25" Margin="475,15,-64.667,1.333" TextWrapping="Wrap" Text="°C" VerticalAlignment="Center" Width="25" Foreground="#FF0066FF" TextAlignment="Center"/>
+                <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Height="25" Margin="475,55,-64.667,1.333" TextWrapping="Wrap" Text="°C" VerticalAlignment="Center" Width="25" Foreground="#FF0066FF" TextAlignment="Center"/>
+
+                <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Height="30" Margin="518,15,-297.667,0.333" TextWrapping="Wrap" Text="Độ ẩm cài đặt:" VerticalAlignment="Center" Width="125" Foreground="#FF0066FF"/>
+                <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Height="30" Margin="518,55,-297.667,0.333" TextWrapping="Wrap" Text="Độ ẩm hiện tại:" VerticalAlignment="Center" Width="125" Foreground="#FF0066FF"/>
+                <TextBox x:Name="textDoAmCaiDat" HorizontalAlignment="Left" Height="30" Margin="643,10,-297.667,0" TextWrapping="Wrap" Text="14.5" Width="64" TextAlignment="Right"/>
+                <TextBox x:Name="textDoAmHienTai" HorizontalAlignment="Left" Height="30" Margin="643,50,-297.667,0" TextWrapping="Wrap" Text="17" Width="64" TextAlignment="Right"/>
+                <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Height="25" Margin="707,15,-296.667,1.333" TextWrapping="Wrap" Text="%" VerticalAlignment="Center" Width="25" Foreground="#FF0066FF" TextAlignment="Center"/>
+                <TextBlock x:Name="textBlock_Copy10" HorizontalAlignment="Left" Height="25" Margin="707,55,-296.667,1.333" TextWrapping="Wrap" Text="%" VerticalAlignment="Center" Width="25" Foreground="#FF0066FF" TextAlignment="Center"/>
+            </RelativePanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Width="800" Height="55">
+                <Button x:Name="button1" HorizontalAlignment="Left" Height="48" Margin="5,0" Width="48" Tapped="button1_Tapped">
+                    <Image x:Name="image" HorizontalAlignment="Left" Height="48" Margin="-10,-6" VerticalAlignment="Top" Width="48" Source="Resources/Images/Home.png"/>
+                </Button>
+                <Button x:Name="button" HorizontalAlignment="Left" Height="48" Margin="5,0" Width="48" Tapped="button_Tapped">
+                    <Image x:Name="image1" HorizontalAlignment="Left" Height="48" Margin="-10,-6" VerticalAlignment="Top" Width="48" Source="Resources/Images/Settings.png"/>
+                </Button>
+                <Button x:Name="button_Webbrowser" HorizontalAlignment="Left" Height="48" Margin="5,0" Width="48" Tapped="button_Webbrowser_Tapped">
+                    <Image x:Name="image2" HorizontalAlignment="Left" Height="48" Margin="-10,-6" VerticalAlignment="Top" Width="48" Source="Resources/Images/Find Search.png"/>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+        <Frame Name="Frame_Main" Margin="0,0,0,60" Navigated="Frame_Main_Navigated" Navigating="Frame_Main_Navigating" Width="800" Height="435"/>
     </Grid>
+
 </Page>

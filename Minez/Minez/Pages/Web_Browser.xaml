@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Minez.Pages.Web_Browser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Minez.Page"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Width="800" Height="435" >
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2C38AA" Offset="0"/>
+                    <GradientStop Color="#FF0064DC" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Width="800" Height="32" Margin="0">
+                <TextBox x:Name="Web_Address" FontSize="14" TextWrapping="Wrap" Text="http://www.bing.com" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="32" Width="700"/>
+                <Button x:Name="Go_Web" Content="Go!" HorizontalAlignment="Right" VerticalAlignment="Center" Height="32" Width="100" Click="Go_Web_Click" FontSize="14" FontWeight="Bold" Background="#33FFFFFF" BorderBrush="#FF528ADA" Foreground="White"/>
+            </StackPanel>
+
+            <!--Web view control-->
+            <WebView x:Name="webView" Width="800" Height="403" Margin="0"/>
+        </StackPanel>
+    </Grid>
+</Page>

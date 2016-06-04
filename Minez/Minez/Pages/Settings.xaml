@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Minez.Pages.Settings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Minez.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel HorizontalAlignment="Center" Height="435" Margin="0" VerticalAlignment="Center" Width="800">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0046FF" Offset="0"/>
+                    <GradientStop Color="#FF2A77FF" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBox x:Name="Hiha" TextWrapping="Wrap" Text="TextBox"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
